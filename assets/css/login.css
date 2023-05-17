@@ -1,0 +1,142 @@
+body {
+    margin: 0%;
+}
+
+/* the left slanted image column */
+.left {
+    background-image: url(../images/back.png);
+    /* background-image: url(../images/logo.png); */
+    clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* right side with the signin/up form */
+.right {
+    padding-top: 4% !important;
+    padding-right: 9% !important;
+    padding-left: 5% !important;
+    overflow-y: auto;
+    max-width: 47vw !important;
+}
+
+/* for heading and underline */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    position: relative;
+    font-weight: 700 !important;
+    padding: 5px;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    width: 82%;
+    height: 1px;
+    bottom: 0;
+    left: 11%;
+    border-bottom: 4px solid blue;
+}
+
+/* outlined input groups */
+.form-group>label {
+    top: 40px;
+    left: 10px;
+    position: relative;
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+    font-size: 1.1rem;
+    font-weight: 600 !important;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.form-group.label-animate>label {
+    top: 14px !important;
+    left: 5px !important;
+    font-size: 1rem;
+}
+
+/* to disable the arrows on number input tag */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*styling input tags  */
+.inputtabs {
+    font-size: 1.1rem !important;
+    font-family: 'Poppins', sans-serif !important;
+    border: 0px !important;
+    border-bottom: 2px solid black !important;
+    border-radius: 0px !important;
+}
+
+.inputtabs:focus {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+/* custom-button */
+.cstm-bttn {
+    background-color: blue !important;
+    border: 3px solid whitesmoke !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.cstm-bttn:hover {
+    background-color: white !important;
+    border: 0px !important;
+    color: blue !important;
+    font-size: 1.5rem !important;
+    border-top: 2px solid blue !important;
+    border-bottom: 2px solid blue !important;
+    border-radius: 0px !important;
+    transform: translateY(-5px);
+    transition: 500ms ease-out;
+}
+
+
+
+@media only screen and (max-width: 560px) {
+    *{
+        color: black !important;
+    }
+    .disappear {
+        display: none;
+    }
+    .form-group>label {
+        background-color: transparent;
+    }
+    .form-group.label-animate>label {
+        background-color: transparent;
+    }
+    .inputtabs{
+        background-color: transparent !important;
+    }
+    .right {
+        max-width: inherit !important;
+        height: 100vh;
+        padding: 5% !important;
+        padding-right: 6% !important;
+        padding-left: 6% !important;
+        background-image: url(../images/back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .mobil {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+        border-radius: 15px;
+        margin: 5% 3% !important;
+        padding: 20px 30px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(56, 48, 203, 0.2) !important;
+    }
+}

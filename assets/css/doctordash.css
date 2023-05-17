@@ -1,0 +1,80 @@
+* {
+    margin: 0%;
+}
+
+/* top bar for diplaying doctor info */
+.doc-info {
+    background: rgb(176, 62, 165);
+    background: linear-gradient(90deg, rgba(176, 62, 165, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    border-radius: 15px;
+
+}
+
+/* profile picture for doctor */
+.profile-pic img {
+    border-radius: 7px;
+    border: 2px solid black;
+    max-height: 200px;
+    width: auto;
+}
+
+/* column containing doctor information */
+.personal_info {
+    border-left: 4px solid black;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* patient notification */
+.patient_info {
+    border: 3px solid grey;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+.icons div img {
+    position: relative;
+    top: 15px;
+    height: 35px !important;
+}
+
+.symptoms_allergies {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+
+.dropshow {
+    display: none !important;
+}
+
+.dropdown {
+    border-top: 3px solid grey;
+    margin-top: 20px !important;
+}
+
+.dropdown>div {
+    margin-top: 30px;
+}
+
+.containerr {
+    margin: 2% 3%;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.btn {
+    border: 3px solid black !important;
+}
+
+@media only screen and (max-width: 560px) {
+    .disappear {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0%;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.containerr {
+    margin: 2% 3%;
+}
+
+/* top bar for diplaying doctor info */
+.doc-info {
+    background: rgb(176, 62, 165);
+    background: linear-gradient(90deg, rgba(176, 62, 165, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    border-radius: 15px;
+}
+
+/* profile picture for doctor */
+.profile-pic img {
+    border-radius: 7px;
+    border: 2px solid black;
+    max-height: 200px;
+    width: auto;
+}
+
+/* column containing doctor information */
+.personal_info {
+    border-left: 4px solid black;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* css for edit button */
+.btn {
+    border: 3px solid black !important;
+}
+
+/* history medicines */
+.tablet {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #673F3F;
+    box-shadow: 4px 4px 4px rgba(17, 77, 231, 0.25);
+    border-radius: 5px;
+    padding: 10px;
+}
